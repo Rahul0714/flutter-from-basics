@@ -5,15 +5,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const textStyle = TextStyle(fontFamily: "sarif");
     return Scaffold(
       appBar: AppBar(title: const Text("Cataloge App")),
-      body: Center(
-        child: Container(
-          // ignore: prefer_const_constructors
-          child: Text(
-            "Welcome to 30 Days Flutter",
-            style: const TextStyle(fontFamily: "sarif"),
-          ),
+      body: const Center(
+        child: Text(
+          "Welcome to 30 Days Flutter",
+          style: textStyle,
         ),
       ),
       drawer: const Drawer(),
